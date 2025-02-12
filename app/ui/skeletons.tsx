@@ -216,3 +216,37 @@ export function InvoicesTableSkeleton() {
     </div>
   );
 }
+
+export function CustomersSkeleton() {
+  return (
+    <div className={`${shimmer} relative w-full overflow-hidden`}>
+      <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
+      {/* Search Skeleton */}
+      <div className="mb-4 h-10 w-full rounded-md bg-gray-200" />
+
+      <div className="rounded-xl bg-gray-100 p-4">
+        {/* Table Header */}
+        <div className="grid grid-cols-5 gap-4 mb-4">
+          <div className="h-6 w-24 rounded-md bg-gray-200" />
+          <div className="h-6 w-24 rounded-md bg-gray-200" />
+          <div className="h-6 w-24 rounded-md bg-gray-200" />
+          <div className="h-6 w-24 rounded-md bg-gray-200" />
+          <div className="h-6 w-24 rounded-md bg-gray-200" />
+        </div>
+
+        {/* Table Rows */}
+        <div className="rounded-md bg-white p-4">
+          {[...Array(7)].map((_, i) => (
+            <div key={i} className="grid grid-cols-5 gap-4 mb-4 last:mb-0">
+              <div className="h-6 w-24 rounded-md bg-gray-200" />
+              <div className="h-6 w-32 rounded-md bg-gray-200" />
+              <div className="h-6 w-16 rounded-md bg-gray-200" />
+              <div className="h-6 w-16 rounded-md bg-gray-200" />
+              <div className="h-6 w-16 rounded-md bg-gray-200" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

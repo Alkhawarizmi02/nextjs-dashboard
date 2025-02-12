@@ -7,6 +7,12 @@ const users = [
     email: 'user@nextmail.com',
     password: '123456',
   },
+  {
+    id: '123e4567-e89b-12d3-a456-426614174001',
+    name: 'Abidar',
+    email: 'abidar@guymail.com',
+    password: 'guyguy',
+  },
 ];
 
 const customers = [
@@ -45,6 +51,12 @@ const customers = [
     name: 'Balazs Orban',
     email: 'balazs@orban.com',
     image_url: '/customers/balazs-orban.png',
+  },
+  {
+    id: '123e4567-e89b-12d3-a456-426614174001',
+    name: 'Abidar Hassan',
+    email: 'abidar@hassan.com',
+    image_url: '/customers/abidar-hassan.png',
   },
 ];
 
@@ -90,6 +102,12 @@ const invoices = [
     amount: 666,
     status: 'pending',
     date: '2023-06-27',
+  },
+  {
+    customer_id: customers[6].id,
+    amount: 1000000,
+    status: 'pending',
+    date: '2002-02-01',
   },
   {
     customer_id: customers[3].id,

@@ -6,7 +6,7 @@ export default function FactoraLogo() {
     <div
       className={`${lusitana.className} flex items-center gap-2 text-white`}
     >
-      <GlobeAltIcon className="h-8 w-8" />
+      <GlobeAltIcon className="h-8 w-8 rotate-12" />
       <p className="text-3xl">Factora</p>
     </div>
   );
